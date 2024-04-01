@@ -1,10 +1,23 @@
-import Image from "next/image";
-import FancyFont from "@/components/FancyFont";
+import Header from "@/components/Header"
+import Navbar from "@/components/Navbar"
+import Hero from "@/components/Hero"
+import Footer from "@/components/Footer"
+import Consulting from "@/components/Consulting"
+import About from "@/components/About"
+import Contact from "@/components/Contact"
 
 export default function Home() {
-	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24">
-			Hey im the body
+	return <>
+		<Header />
+		<Navbar />
+
+		<Hero />
+		<main>
+			<Consulting />
+			<About />
+			<Contact />
 		</main>
-	);
+
+		<Footer />
+	</>;
 }
