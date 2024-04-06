@@ -17,7 +17,7 @@ export default function Consulting() {
 				Мы предлагаем консультационные услуги по разным направлениям для малого и среднего бизнеса
 			</p>
 
-			<div className="container cards grid md:grid-cols-2 gap-6 md:gap-10 !max-w-[1040px]  ">
+			<div className="container cards grid md:grid-cols-2 gap-6 md:gap-10 !max-w-[1040px]">
 				<ConsultingCard href="#finance" src="/stock.png" title="Финансовый сектор" text="Фондовый рынок, валюта, золото" />
 				<ConsultingCard href="#outsourcing" src="/outsourcing.png" title="Аутсорсинг" text="Маркетинг, юриспруденция, бухгалтерский учет" />
 				<ConsultingCard href="#banking" src="/bank.png" title="Банковский сектор" text="Счета, документы" />
@@ -120,7 +120,7 @@ export default function Consulting() {
 			<BigCoolHeading number="02" text="Аутсорсинг" />
 			<p className="max-w-[720px]">— передача организацией определённых видов или функций производственной или предпринимательской деятельности другой компании на основании договора</p>
 
-            <div className="max-w-[800px]">
+			<div className="max-w-[800px]">
 				<FancyFont>
 					<h3 className="text-xl mt-10 mb-3">Маркетинг</h3>
 				</FancyFont>

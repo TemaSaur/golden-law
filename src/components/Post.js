@@ -39,6 +39,22 @@ export default function Post({post}) {
 	date.setUTCSeconds(post.datetime)
 	const dateString = `${("0" + date.getDate()).slice(-2)}.${("0" + (date.getMonth()+1)).slice(-2)}.${date.getFullYear()}`
 
+	let src
+	let length = 0
+	if (post.images) {
+		if (typeof post.images == "string") {
+			src = post.images
+			length = 1
+		}
+		else if (post.images.length == 1) {
+			src = post.images[0]
+			length = 1
+		} else {
+			length = post.images.length
+		}
+	}
+
+
 	return <div className="max-w-[720px] mx-auto rounded-xl bg-background-other/50 p-5 pt-8 sm:p-10 border-1 border-accent/20">
 		<div className="top flex justify-between items-center mb-7">
 			<FancyFont>
@@ -53,21 +69,16 @@ export default function Post({post}) {
 		</div>
 
 		<div className="images">
-			{post.images && typeof post.images == "string" &&
+			{length == 1 &&
 				<div className="image relative overflow-hidden">
-					<Image className="max-h-[360px] w-auto mx-auto relative z-10" src={"/" + post.images} width={640} height={360} alt="" />
-					<Image className="w-full mx-auto absolute top-0 blur-xl" src={"/" + post.images} width={640} height={360} alt="" />
+					<Image className="max-h-[360px] w-auto mx-auto relative z-10" src={"/" + src} width={640} height={360} alt="" />
+					<Image className="w-full mx-auto absolute top-0 blur-xl" src={"/" + src} width={640} height={360} alt="" />
 				</div>
 			}
-			{post.images && typeof post.images === "array" && post.images.length <= 1 &&
-				<div className="image relative overflow-hidden">
-					<Image className="max-h-[360px] w-auto mx-auto relative z-10" src={"/" + post.images[0]} width={640} height={360} alt="" />
-					<Image className="w-full mx-auto absolute top-0 blur-xl" src={"/" + post.images[0]} width={640} height={360} alt="" />
-				</div>
-			}{post.images && typeof post.images === "array" && post.images.length > 1 &&
+			{length > 1 &&
 				<div className="flex gap-2 flex-wrap">
 					{post.images.map((image, i) =>
-						<Image className="max-h-[360px]  w-auto mx-auto relative z-10" src={"/" + image} width={640} height={360} alt="" key={i} />
+						<Image className="max-h-[360px] w-auto mx-auto relative z-10" src={"/" + image} width={640} height={360} alt="" key={i} />
 					)}
 				</div>
 			}
