@@ -4,15 +4,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Vacancy from "@/components/Vacancy";
 import FancyFont from "@/components/FancyFont";
-import { useState, useEffect } from 'react'
+import vacancies from './data.json'
 
 export default function Vacancies() {
-	const [vacancies, setVacancies] = useState([])
-	useEffect(() => {
-		fetch('https://golden-law-api.netlify.app/api/vacancies')
-			.then(res => res.json())
-			.then(vacancies => setVacancies(vacancies))
-	}, [])
+	// const [vacancies, setVacancies] = useState([])
+	// useEffect(() => {
+	//	 	fetch(`${api}/vacancies`)
+	// 		.then(res => res.json())
+	// 		.then(vacancies => setVacancies(vacancies))
+	// }, [])
 
 	return <>
 		<Header>

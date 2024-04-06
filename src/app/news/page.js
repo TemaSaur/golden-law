@@ -5,15 +5,16 @@ import FancyFont from '@/components/FancyFont'
 import Post from '@/components/Post'
 import Footer from '@/components/Footer'
 import { useState, useEffect } from 'react'
+import posts from './data.json'
 
 
 export default function News() {
-	const [posts, setPosts] = useState([])
-	useEffect(() => {
-		fetch('https://golden-law-api.netlify.app/api/news')
-			.then(res => res.json())
-			.then(posts => setPosts(posts))
-	}, [])
+	// const [posts, setPosts] = useState([])
+	// useEffect(() => {
+	// 	fetch('https://golden-law-api.netlify.app/api/news')
+	// 		.then(res => res.json())
+	// 		.then(posts => setPosts(posts))
+	// }, [])
 
 	return <>
 		<Header>

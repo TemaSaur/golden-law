@@ -4,7 +4,7 @@ import Link from "next/link"
 
 
 export default function Header({children}) {
-	return <header className="fixed z-30 t-0 l-0 w-full from-background to-transparent z-10">
+	return <header className="fixed z-30 t-0 l-0 w-full from-background to-transparent">
 		<div className="flex justify-between container items-center !px-4 !py-4">
 			<Link href="/">
 				<div className="flex items-center gap-6">
