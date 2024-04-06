@@ -29,17 +29,23 @@ export default function Contact() {
 				<div className="phone flex items-center my-2">
 					<Image src="/home.png" width="24" height="24" alt="" />
 					<span className="px-2 pr-4">Адрес:</span>
-					<FancyFont>г. Екатеринбург, Проспект Ленина, д 69, корп.2</FancyFont>
+					<FancyFont>г. Екатеринбург, Проспект Ленина, д. 69, корп. 2</FancyFont>
 				</div>
 
-				<p className="my-4">Часы работы:</p>
-				<p>Пн: с 09-00 до 21-00</p>
-				<p>Вт: с 09-00 до 21-00</p>
-				<p>Ср: с 09-00 до 21-00</p>
-				<p>Чт: с 09-00 до 21-00</p>
-				<p>Пт: с 09-00 до 21-00</p>
-				<p>Сб: с 10-00 до 14-00</p>
-				<p>Вс: выходной</p>
+				<div className="phone flex items-center my-2">
+					<Image src="/clock.png" width="24" height="24" alt="" />
+					<span className="px-2 pr-4">Часы работы:</span>
+				</div>
+				
+				<div className="time text-lg ml-8">
+					<p>Пн: 09:00 - 21:00</p>
+					<p>Вт: 09:00 - 21:00</p>
+					<p>Ср: 09:00 - 21:00</p>
+					<p>Чт: 09:00 - 21:00</p>
+					<p>Пт: 09:00 - 21:00</p>
+					<p>Сб: 10:00 - 14:00</p>
+					<p>Вс: выходной</p>
+				</div>
 			</div>
 		</div>
 	</section>

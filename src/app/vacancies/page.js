@@ -1,4 +1,4 @@
-"use client"
+// "use client"
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -7,13 +7,6 @@ import FancyFont from "@/components/FancyFont";
 import vacancies from './data.json'
 
 export default function Vacancies() {
-	// const [vacancies, setVacancies] = useState([])
-	// useEffect(() => {
-	//	 	fetch(`${api}/vacancies`)
-	// 		.then(res => res.json())
-	// 		.then(vacancies => setVacancies(vacancies))
-	// }, [])
-
 	return <>
 		<Header>
 			<FancyFont>

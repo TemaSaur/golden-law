@@ -34,7 +34,7 @@ export default function Vacancy({vacancy}) {
 			else if (line[0] == ']') {
 				elements.push(<GoodList key={i} chill={true}>
 					{list.map((item, j) =>
-						<li key={j} className="ml-4">{item}</li>
+						<li key={j}>{item}</li>
 					)}
 				</GoodList>)
 			}
