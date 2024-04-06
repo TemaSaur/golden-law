@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react'
 export default function News() {
 	const [posts, setPosts] = useState([])
 	useEffect(() => {
-		fetch('http://192.168.0.5:3000/api/news')
+		fetch('https://golden-law-api.netlify.com/api/news')
 			.then(res => res.json())
 			.then(posts => setPosts(posts))
 	}, [])

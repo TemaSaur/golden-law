@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react'
 export default function Vacancies() {
 	const [vacancies, setVacancies] = useState([])
 	useEffect(() => {
-		fetch('http://192.168.0.5:3000/api/vacancies')
+		fetch('https://golden-law-api.netlify.com/api/vacancies')
 			.then(res => res.json())
 			.then(vacancies => setVacancies(vacancies))
 	}, [])
