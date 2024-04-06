@@ -17,13 +17,13 @@ export default function Contact() {
 				<div className="phone flex items-center my-2">
 					<Image src="/phone.png" width="24" height="24" alt="" />
 					<span className="px-2 pr-4">Телефон:</span>
-					<FancyFont><Link href="tel:+79194684039">+7 (919) 468-40-39</Link></FancyFont>
+					<FancyFont><Link href="tel:+73433191002">+7 (343) 319-10-02</Link></FancyFont>
 				</div>
 
 				<div className="phone flex items-center my-2">
 					<Image src="/mail.png" width="24" height="24" alt="" />
 					<span className="px-2 pr-4">E-Mail:</span>
-					<FancyFont><Link href="mailto:contact@golden-law.ru">contact@golden-law.ru</Link></FancyFont>
+					<FancyFont><Link href="mailto:konsult.work@mail.ru">konsult.work@mail.ru</Link></FancyFont>
 				</div>
 				
 				<div className="phone flex items-center my-2">
