@@ -4,7 +4,7 @@ import Link from "next/link"
 
 
 export default function Contact() {
-	return <section id="contact" className="mt-10">
+	return <section id="contact" className="mt-10 scroll-mt-20">
 		<FancyFont>
 			<h1 className="text-2xl text-center py-6">
 				Контакты
@@ -31,6 +31,15 @@ export default function Contact() {
 					<span className="px-2 pr-4">Адрес:</span>
 					<FancyFont>г. Екатеринбург, Проспект Ленина, д 69, корп.2</FancyFont>
 				</div>
+
+				<p className="my-4">Часы работы:</p>
+				<p>Пн: с 09-00 до 21-00</p>
+				<p>Вт: с 09-00 до 21-00</p>
+				<p>Ср: с 09-00 до 21-00</p>
+				<p>Чт: с 09-00 до 21-00</p>
+				<p>Пт: с 09-00 до 21-00</p>
+				<p>Сб: с 10-00 до 14-00</p>
+				<p>Вс: выходной</p>
 			</div>
 		</div>
 	</section>

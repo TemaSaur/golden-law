@@ -25,7 +25,7 @@ export default function Hero() {
 				</p>
 
 				<div className="text-center">
-					<Button href="#contact" className="text-sm lg:text-base">
+					<Button href="#contact" className="text-sm lg:text-base hover:bg-main/10 transition-all">
 						Получить консультацию
 					</Button>
 				</div>

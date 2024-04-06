@@ -2,7 +2,7 @@ import FancyFont from "./FancyFont"
 
 
 export default function About() {
-	return <section id="about" className="mt-10">
+	return <section id="about" className="mt-10 scroll-mt-20">
 		<FancyFont>
 			<h1 className="text-2xl text-center py-6">
 				О компании
