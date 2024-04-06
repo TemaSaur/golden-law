@@ -9,7 +9,7 @@ const nextConfig = {
 			},
 			{
 				protocol: 'https',
-				hostname: 'golden-law-api.netlify.com',
+				hostname: 'golden-law-api.netlify.app',
 				port: '',
 				pathname: '**',
 			}
