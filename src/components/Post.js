@@ -55,19 +55,19 @@ export default function Post({post}) {
 		<div className="images">
 			{post.images && typeof post.images == "string" &&
 				<div className="image relative overflow-hidden">
-					<Image className="max-h-[360px] w-auto mx-auto relative z-10" src={"https://golden-law-api.netlify.com/" + post.images} width={640} height={360} alt="" />
-					<Image className="w-full mx-auto absolute top-0 blur-xl" src={"https://golden-law-api.netlify.com/" + post.images} width={640} height={360} alt="" />
+					<Image className="max-h-[360px] w-auto mx-auto relative z-10" src={"https://golden-law-api.netlify.app/" + post.images} width={640} height={360} alt="" />
+					<Image className="w-full mx-auto absolute top-0 blur-xl" src={"https://golden-law-api.netlify.app/" + post.images} width={640} height={360} alt="" />
 				</div>
 			}
 			{post.images && typeof post.images === "array" && post.images.length <= 1 &&
 				<div className="image relative overflow-hidden">
-					<Image className="max-h-[360px] w-auto mx-auto relative z-10" src={"https://golden-law-api.netlify.com/" + post.images[0]} width={640} height={360} alt="" />
-					<Image className="w-full mx-auto absolute top-0 blur-xl" src={"https://golden-law-api.netlify.com/" + post.images[0]} width={640} height={360} alt="" />
+					<Image className="max-h-[360px] w-auto mx-auto relative z-10" src={"https://golden-law-api.netlify.app/" + post.images[0]} width={640} height={360} alt="" />
+					<Image className="w-full mx-auto absolute top-0 blur-xl" src={"https://golden-law-api.netlify.app/" + post.images[0]} width={640} height={360} alt="" />
 				</div>
 			}{post.images && typeof post.images === "array" && post.images.length > 1 &&
 				<div className="flex gap-2 flex-wrap">
 					{post.images.map((image, i) =>
-						<Image className="max-h-[360px]  w-auto mx-auto relative z-10" src={"https://golden-law-api.netlify.com/" + image} width={640} height={360} alt="" key={i} />
+						<Image className="max-h-[360px]  w-auto mx-auto relative z-10" src={"https://golden-law-api.netlify.app/" + image} width={640} height={360} alt="" key={i} />
 					)}
 				</div>
 			}
