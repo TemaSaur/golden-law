@@ -76,9 +76,9 @@ export default function Post({post}) {
 				</div>
 			}
 			{length > 1 &&
-				<div className="flex gap-2 flex-wrap">
+				<div className="flex gap-2">
 					{post.images.map((image, i) =>
-						<Image className="max-h-[360px] w-auto mx-auto relative z-10" src={"/" + image} width={640} height={360} alt="" key={i} />
+						<Image className="max-h-[300px] max-w-full mx-auto object-contain z-10 basis-0 grow" src={"/" + image} width={640} height={360} alt="" key={i} />
 					)}
 				</div>
 			}
