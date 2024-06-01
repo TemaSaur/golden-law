@@ -55,7 +55,7 @@ export default function Post({post}) {
 	}
 
 
-	return <div className="max-w-[720px] mx-auto rounded-xl bg-background-other/50 p-5 pt-8 sm:p-10 border-1 border-accent/20">
+	return <div className="max-w-[720px] w-full mx-auto rounded-xl bg-background-other/50 p-5 pt-8 sm:p-10 border-1 border-accent/20">
 		<div className="top flex justify-between items-center mb-7">
 			<FancyFont>
 				<h2 className="text-lg xs:text-2xl">{post.title}</h2>

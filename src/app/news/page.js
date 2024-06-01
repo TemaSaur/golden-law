@@ -17,7 +17,7 @@ export default function News() {
 
 		<main className="container flex flex-col gap-10">
 			{posts.length > 0 ?
-				posts.reverse().map(post =>
+				posts.map(post =>
 					<Post key={post.title} post={post} />
 				)
 				: <div className="text-center">Загрузка...</div>
