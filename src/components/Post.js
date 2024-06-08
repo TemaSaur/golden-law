@@ -4,6 +4,8 @@ import FancyFont from "./FancyFont"
 import Image from "next/image"
 
 const getSmallText = text => {
+	if (!text)
+		return "";
 	const THRESHOLD = 270;
 
 	if (text.length <= THRESHOLD)
@@ -18,7 +20,7 @@ const getParagraphs = text => (text.value + "").split('\n').map((p, i) =>
 
 export default function Post({post}) {
 	const smallText = getSmallText(post.text)
-	const fullText = post.text
+	const fullText = post.text || "";
 	const changeText = smallText != fullText
 
 	const toggleText = () => {
@@ -63,10 +65,12 @@ export default function Post({post}) {
 			<span className="text-accent text-xs xs:text-sm">{dateString}</span>
 		</div>
 
-		<div className="mb-6 text-sm sm:text-base">
-			{getParagraphs(text)}
-			{changeText && getButton()}
-		</div>
+		{post.text &&
+			<div className="mb-6 text-sm sm:text-base">
+				{getParagraphs(text)}
+				{changeText && getButton()}
+			</div>
+		}
 
 		<div className="images">
 			{length == 1 &&
